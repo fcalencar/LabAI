@@ -95,9 +95,46 @@ Selecione **Criar**. Após a criação do conjunto de dados, selecione o conjunt
 **Contagem de instâncias:** 3\
 **Máquina virtual:** Standard_DS3_v2\
 **Ponto final:** Novo\
-**Nome do ponto de extremidade:** Deixe o padrão\
+**Nome do ponto de extremidade:** Deixe o padrão\ 
 **Nome da implantação:** Deixe o padrão\
 **Inferência de coleta de dados:** Desativado\
 **Modelo de pacote:** Desativado
 
 Aguarde até que o Implantar status para Deploy 
+
+## Teste o serviço implantado
+
+Acessar **Ponto de extremidade** no menu lateral e selecione o ponto de extremidade.\
+Selecione **Testar**
+
+**Input:**
+```json
+{
+  "input_data": {
+    "columns": [
+      "day",
+      "mnth",
+      "year",
+      "season",
+      "holiday",
+      "weekday",
+      "workingday",
+      "weathersit",
+      "temp",
+      "atemp",
+      "hum",
+      "windspeed"
+    ],
+    "index": [0],
+    "data": [[1,1,2022,2,0,1,1,2,0.3,0.3,0.3,0.3]]
+  }
+ }
+```
+Clicar no botão **Testar**.
+
+**Output**
+```json
+[
+    335.75521469847945
+]
+```
