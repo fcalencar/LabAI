@@ -87,3 +87,17 @@ Selecione **Criar**. Após a criação do conjunto de dados, selecione o conjunt
 **Camada de máquina virtual:** Dedicada\
 **Tamanho da máquina virtual:** Standard_DS3_V2\
 **Número de instâncias:** 1
+
+## Implantar e testar o modelo
+
+1. Na guia Modelo, selecione **Implantar**, use a opção **Terminal em tempo real**.
+
+**Contagem de instâncias:** 3\
+**Máquina virtual:** Standard_DS3_v2\
+**Ponto final:** Novo\
+**Nome do ponto de extremidade:** Deixe o padrão\
+**Nome da implantação:** Deixe o padrão\
+**Inferência de coleta de dados:** Desativado\
+**Modelo de pacote:** Desativado
+
+Aguarde até que o Implantar status para Deploy 
